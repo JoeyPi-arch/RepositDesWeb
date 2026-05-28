@@ -1,0 +1,157 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(7, 7, 183);
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(203, 5, 5);
+    font-size: 50px;
+
+    font-family: "Fifa", sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+header p {
+    font-size: 25px;
+    font-family: "Comic Relief", cursive;
+    text-align: center;
+}
+
+p {
+    font-family: "Stencil PTx Sprayed Font", sans-serif;
+    text-align: justify;
+    margin: 16px;
+}
+
+h2 {
+    font-family: "Stencil PTx Sprayed Font", sans-serif;
+}
+
+li {
+    font-family: "Stencil PTx Sprayed Font", sans-serif;
+}
+
+a {
+    font-family: "Stencil PTx Sprayed Font", sans-serif;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.box-sinopse {
+    width: 80%;
+    padding: 20px;
+    margin: 30px auto;
+
+    border-style: solid;
+    border-color: #0707b7;
+    border-width: 3px;
+    border-radius: 10px; 
+    
+    background-color: #111;
+}
+
+#topo {
+    border-bottom: 2px dashed rgb(203, 5, 5);
+    padding-bottom: 10px;
+}
+
+#episodios {
+    background-color: #0a0a0a;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.card {
+    background-color: #111;
+    border: 2px solid #0707b7;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.logo-container img {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+}
+
+.descricao-logo {
+    width: 70%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .descricao-logo {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .logo-container img {
+        width: 220px;
+    }
+}
+
+.logo-container img {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
