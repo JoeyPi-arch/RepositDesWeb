@@ -1,0 +1,64 @@
+body {
+    background-color: black; /*Cor do fundo*/
+    color: white; /*Cor do texto*/
+}
+
+h1 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(7, 7, 183);
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(203, 5, 5);
+    font-size: 50px;
+    font-family: "Comic Relief", cursive;
+}
+
+header p {
+    font-size: 25px;
+    font-family: "Comic Relief", cursive;
+    text-align: center;
+}
+
+p {
+    font-family: "Stencil PTx Sprayed Font", sans-serif;
+    text-align: justify;
+    margin: 16px;
+}
+
+h2 {
+    font-family: "Stencil PTx Sprayed Font", sans-serif;
+}
+
+li {
+    font-family: "Stencil PTx Sprayed Font", sans-serif;
+}
+
+a {
+    font-family: "Stencil PTx Sprayed Font", sans-serif;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.box-sinopse {
+    width: 80%; /* Largura */
+    padding: 20px; /* Espaçamento Interno */
+    margin: 30px auto; /* Espaçamento Externo */
+
+    border-style: solid;
+    border-color: #0707b7;
+    border-width: 3px;
+    border-radius: 10px; 
+    
+    background-color: #111;
+}
+
+#topo {
+    border-bottom: 2px dashed rgb(203, 5, 5);
+    padding-bottom: 10px;
+}
+
+#episodios {
+    background-color: #0a0a0a;
+    padding: 15px;
+    margin-top: 20px;
+}
