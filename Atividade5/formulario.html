@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form{
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .campo{
+            margin-bottom: 15px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus{
+            border-color: #007bff;
+            outline: none;
+            background-color: #eef6ff;
+        }
+
+        textarea{
+            resize: vertical;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px){
+            form{
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+
+        <h1>Formulário de Cadastro</h1>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome"
+                       required minlength="3">
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email"
+                       name="usuarioEmail" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha"
+                       name="senhaUsuario" required>
+            </div>
+
+            <div class="campo">
+                <label for="data">Data de nascimento</label>
+                <input type="date" id="data" name="dataNascimento">
+            </div>
+
+            <div class="campo">
+                <label for="curso">Curso</label>
+                <select id="curso" name="curso">
+                    <option>ADS</option>
+                    <option>Engenharia de Software</option>
+                    <option>Ciência da Computação</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" id="masculino"
+                   name="sexo" value="Masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminino"
+                   name="sexo" value="Feminino">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" id="outro"
+            name="sexo" value="Outro">
+            <label for="outro">Outro</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interesses</legend>
+
+            <input type="checkbox" id="programacao">
+            <label for="programacao">Programação</label>
+
+            <input type="checkbox" id="bancodedados">
+            <label for="bancodedados">Banco de dados</label>
+
+            <input type="checkbox" id="design">
+            <label for="design">Design</label>
+
+            <input type="checkbox" id="jogos">
+            <label for="jogos">Jogos</label>
+
+            <input type="checkbox" id="cybersecugrança">
+            <label for="cybersecugrança">Cyber Segurança</label>
+        </fieldset>
+
+        <div class="campo">
+            <label for="comentarios">Comentários</label>
+            <textarea id="comentarios"
+                      rows="5"></textarea>
+        </div>
+
+        <div class="campo">
+            <label for="foto">Upload de Foto</label>
+            <input type="file" id="foto">
+        </div>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+</body>
+</html>
