@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef3f8;
+            color: #333;
+        }
+
+        .cabecalho {
+            background: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .menu-navegacao {
+            background: #083d91;
+        }
+
+        .menu-navegacao ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .menu-navegacao a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .menu-navegacao a:hover {
+            background: #0d6efd;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+            animation: aparecer 1s ease;
+        }
+
+        .card h2 {
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #083d91;
+            margin: 15px 0;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+                
+        .foto-prototipo{
+            display:block;
+            margin: 20px auto;
+            width:400px;
+        }
+
+        .foto-exemplo{
+            display:block;
+            margin: 20px auto;
+            width:400px;
+        }
+        
+        @media (max-width: 768px) {
+            .foto-perfil {
+            width: 180px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .foto-perfil {
+            width: 140px;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .rodape{
+        background:#083d91;
+        color:white;
+        text-align:center;
+        padding:15px;
+        margin-top:30px;
+    }
+    
+    .icone-link{
+        width:24px;
+        height:24px;
+        vertical-align:middle;
+        margin-right:8px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>João Pedro Batista de Jesus</h1>
+        <p>Portfólio completo</p>
+    </header>
+
+    <nav class="menu-navegacao">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+
+        <section class="card">
+            <h2>Projetos de Programação</h2>
+
+            <p>
+                Desenvolvimento de exercícios e aplicações voltadas para:
+            </p>
+
+            <ul>
+                <li>Lógica de Programação</li>
+                <li>Consultas SQL</li>
+                <li>Estruturas de Dados</li>
+                <li>Integração com APIs</li>
+                <li>Web Scraping</li>
+                <li>Estatísticas</li>
+            </ul>
+
+            <h3>Tecnologias Utilizadas</h3>
+
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Projeto de Extensão - Netetive</h2>
+
+            <p>
+                Atualmente participo, em grupo, de um projeto de extensão do curso de
+                Engenharia de Software voltado para educação e aprendizagem em
+                cibersegurança.
+            </p>
+
+            <p>
+                O projeto consiste no desenvolvimento de um jogo chamado Netetive,
+                onde o jogador assume o papel de um agente de cibersegurança
+                responsável por identificar vírus, hackers e golpes em sites,
+                aplicativos e mensagens.
+            </p>
+
+            <p>
+                O objetivo é promover a conscientização sobre segurança digital
+                de forma interativa e educativa, alinhada aos Objetivos de
+                Desenvolvimento Sustentável (ODS). O jogo está sendo produzido na Godot Engine.
+            </p>
+
+            <p>
+                Primeiro protótipo do projeto:
+                <img src="prototipo.png"
+                alt="Netetive Protótipo"
+                class="foto-prototipo">
+            </p>
+            <p>
+                Exemplos de "golpes" que aparecem no jogo que o jogador terá que identificar:
+                <img src="Netetive-exemplo.png"
+                alt="Netetive Exemplo"
+                class="foto-exemplo">
+            </p>
+        </section>
+
+    </main>
+
+<footer class="rodape">
+    <p>Feito por João Pedro Batista de Jesus</p>
+</footer>
+
+</body>
+</html>

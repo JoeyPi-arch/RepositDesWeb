@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio João Pedro</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f4f6f9;
+            color:#333;
+        }
+
+        .cabecalho{
+            background:#0d6efd;
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        .menu-navegacao{
+            background:#083d91;
+        }
+
+        .menu-navegacao ul{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+        }
+
+        .menu-navegacao a{
+            color:white;
+            text-decoration:none;
+            padding:15px 25px;
+            display:block;
+            transition:0.3s;
+        }
+
+        .menu-navegacao a:hover{
+            background:#0d6efd;
+        }
+
+        main{
+            padding:40px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            margin:20px auto;
+            max-width:900px;
+            border-radius:10px;
+            box-shadow:0 4px 8px rgba(0,0,0,.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .foto-perfil{
+            display:block;
+            margin:20px auto;
+            width:220px;
+            border-radius:50%;
+        }
+
+        button{
+            background:#0d6efd;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            margin-top:15px;
+            border-radius:5px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#083d91;
+        }
+
+        #contador{
+            font-weight:bold;
+            font-size:18px;
+        }
+
+        @media (max-width: 768px) {
+            .cabecalho {
+            padding: 20px;
+        }
+        
+        .cabecalho h1 {
+            font-size: 1.8rem;
+        }
+
+        .menu-navegacao ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-navegacao a {
+            width: 100%;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .card {
+            margin: 15px 10px;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .cabecalho h1 {
+            font-size: 1.5rem;
+        }
+
+        .cabecalho p {
+            font-size: 0.9rem;
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+        }
+
+        .card p,
+        .card li {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    }
+
+    .rodape{
+        background:#083d91;
+        color:white;
+        text-align:center;
+        padding:15px;
+        margin-top:30px;
+    }
+    
+    .icone-link{
+        width:24px;
+        height:24px;
+        vertical-align:middle;
+        margin-right:8px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+<header class="cabecalho">
+    <h1>João Pedro Batista de Jesus</h1>
+    <p>Portfólio completo</p>
+</header>
+
+<nav class="menu-navegacao">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section class="card">
+        
+        <img src="fotoportfolio.png"
+             alt="Foto de João Pedro"
+             class="foto-perfil">
+             
+        <h2>Apresentação</h2>
+
+        <p>
+            Olá, meu nome é João Pedro Batista de Jesus e tenho 18 anos. Sou estudante de 
+            Engenharia de Software na UniFil, que adora a área de informática. Tudo sobre mim está
+            na página "Sobre", presente no menu do portfólio.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Links</h2>
+
+        <ul>
+
+            <li>
+            <img src="LinkedIn_icon.svg.png"
+                alt="LinkedIn"
+                class="icone-link">
+
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-batista-de-jesus-4a0490351/"
+               target="_blank">
+                LinkedIn
+            </li>
+
+            <li>
+            <img src="Gmail_icon_(2020).svg.webp"
+                alt="Gmail"
+                class="icone-link">
+                
+                <a href="mailto:joaopbjesus3@gmail.com">
+                    Gmail
+                </a>
+            </li>
+
+            <li>
+            <img src="github_logo_icon_229278.png"
+                alt="GitHub"
+                class="icone-link">
+                
+                <a href="https://github.com/JoeyPi-arch/"
+                   target="_blank">
+                    GitHub
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+    <section>
+        <h3>Visitantes do Perfil</h3>
+        <p>
+            Essa página recebeu
+            <span id="contador">0</span> visitas.
+        </p>
+    <button onclick="adicionarVisita()">
+        Registrar Visita
+    </button>
+</section>
+</main>
+
+<script>
+let visitas = 0;
+
+function adicionarVisita(){
+    visitas++;
+    document.getElementById("contador").textContent = visitas;
+}
+
+</script>
+
+<footer class="rodape">
+    <p>Feito por João Pedro Batista de Jesus</p>
+</footer>
+
+</body>
+</html>

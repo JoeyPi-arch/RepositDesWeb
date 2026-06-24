@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <style>
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family:Arial, sans-serif;
+        background:#f4f6f9;
+        color:#333;
+    }
+
+    
+    .cabecalho{
+        background:#0d6efd;
+        color:white;
+        text-align:center;
+        padding:30px;
+    }
+
+    .menu-navegacao{
+        background:#083d91;
+    }
+
+    .menu-navegacao ul{
+        display:flex;
+        justify-content:center;
+        list-style:none;
+    }
+
+    .menu-navegacao a{
+        color:white;
+        text-decoration:none;
+        padding:15px 25px;
+        display:block;
+        transition:0.3s;
+    }
+
+    .menu-navegacao a:hover{
+        background:#0d6efd;
+    }
+
+    main{
+        max-width:1000px;
+        margin:auto;
+        padding:30px;
+    }
+
+    .card{
+        background:white;
+        margin-bottom:20px;
+        padding:25px;
+        border-radius:10px;
+        box-shadow:0 4px 10px rgba(0,0,0,.1);
+        animation:aparecer 1s ease;
+    }
+
+    .card h2{
+        color:#0d6efd;
+        margin-bottom:15px;
+    }
+
+    .card ul{
+        padding-left:20px;
+    }
+
+    .card li{
+        margin-bottom:8px;
+    }
+    @media screen and (max-width: 768px) {
+        .cabecalho {
+            padding: 20px;
+        }
+
+        .cabecalho h1 {
+            font-size: 2rem;
+        }
+
+        .cabecalho p {
+            font-size: 1rem;
+        }
+
+        .card {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .menu-navegacao ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-navegacao li {
+            width: 100%;
+        }
+
+        .menu-navegacao a {
+            text-align: center;
+            width: 100%;
+            padding: 12px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+
+        .cabecalho {
+            padding: 15px;
+        }
+
+        .cabecalho h1 {
+            font-size: 1.5rem;
+        }
+
+        .cabecalho p {
+            font-size: 0.9rem;
+        } 
+
+        .card {
+            width: 95%;
+            padding: 15px;
+            margin: 15px auto;
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+        }
+
+        .card p,
+        .card li {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .menu-navegacao a {
+            padding: 10px;
+            font-size: 0.95rem;
+        }
+    }
+    
+    section.card{
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+
+    .rodape{
+        background:#083d91;
+        color:white;
+        text-align:center;
+        padding:15px;
+        margin-top:30px;
+    }
+    
+    .icone-link{
+        width:24px;
+        height:24px;
+        vertical-align:middle;
+        margin-right:8px;
+    }
+    
+    </style>
+
+</head>
+<body>
+
+    <header class="cabecalho">
+    <h1>João Pedro Batista de Jesus</h1>
+    <p>Portfólio completo</p>
+</header>
+    
+<nav class="menu-navegacao">
+    <ul><a href="index.html">Início</a> 
+        <a href="sobre.html">Sobre</a> 
+        <a href="projetos.html">Projetos</a>
+    </ul>    
+</nav>
+
+<section class="card">
+    <h2>Sobre Mim</h2>
+
+    <p>
+        Sou estudante de Engenharia de Software na UniFil Londrina, no período noturno, 
+        com interesse em programação e desenvolvimento de jogos. Atualmente, estou no segundo ano
+        de curso e frequento, em conjunto, o Tiro de Guerra de Londrina no período matutino.
+    </p>
+</section>
+
+<section class="card">
+    <h2>Formação Acadêmica</h2>
+
+    <p>
+        Engenharia de Software - UniFil<br>
+        Curso Superior em andamento.<br>
+        Colégio Integrado Sônia Marcondes - Colégio Ética de Ibiporã<br>
+        Ensino Fundamental e Médio completo
+    </p>
+</section>
+
+<section class="card">
+    <h2>Idiomas</h2>
+
+    <ul>
+        <li>Português: Nativo</li>
+        <li>Inglês: Básico</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>Habilidades Técnicas</h2>
+
+    <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Web Scraping</li>
+        <li>Integração com APIs</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>Habilidades Comportamentais</h2>
+
+    <ul>
+        <li>Comunicação</li>
+        <li>Trabalho em equipe</li>
+        <li>Organização</li>
+        <li>Responsabilidade</li>
+        <li>Disciplina</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>Objetivo Profissional</h2>
+
+    <p>
+        Busco uma oportunidade de estágio ou primeiro emprego
+        para desenvolver minhas competências profissionais e
+        contribuir para o crescimento da organização.
+    </p>
+</section>
+
+<footer class="rodape">
+    <p>Feito por João Pedro Batista de Jesus</p>
+</footer>
+
+</main>
